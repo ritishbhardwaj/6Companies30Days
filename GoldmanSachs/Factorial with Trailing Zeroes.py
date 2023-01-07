@@ -26,6 +26,17 @@ class Solution:
                 break
         return count
 
+    #========================Approach 2===============
+    def trailingZeroes2(self, n: int) -> int:
+        res=0
+        while True:
+            if n<5:
+                break
+            else:
+                n=n//5
+                res+=n
+        return res
+
 
 obj=Solution()
 n=4544
